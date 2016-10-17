@@ -1,10 +1,11 @@
-﻿/*Using color-palette: http://www.color-hex.com/color-palette/21658*/
+﻿/*Using color-palette: http://www.color-hex.com/color-palette/21658 */
 
 /*Changed background color*/
 body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #bed3c7;
+    font-family: 'ABeeZee', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -16,6 +17,11 @@ body {
 /*Changed navbar color*/
 .navbar{
     background-color: #0f2c1b;
+}
+
+/*Style Jumbotron*/
+.jumbotron h1{
+    font-family: 'Homemade Apple', cursive;
 }
 
 /*Attempt to make image border*/
