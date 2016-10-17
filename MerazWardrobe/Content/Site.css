@@ -1,6 +1,10 @@
-﻿body {
+﻿/*Using color-palette: http://www.color-hex.com/color-palette/21658*/
+
+/*Changed background color*/
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #bed3c7;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -9,16 +13,26 @@
     padding-right: 15px;
 }
 
-/*Set max-height for rows and carousel*/
-/*Use inside Index views: style="width:350px;height:350px;"*/
-.thumbnail #myCarousel{
-    max-height: 350px;
+/*Changed navbar color*/
+.navbar{
+    background-color: #0f2c1b;
 }
 
+/*Attempt to make image border*/
+/*img{
+    border-color: #276f45;
+}*/
+
+/*Set max-height for rows and carousel*/
+/*Use inside Index views: style="width:350px;height:350px;"*/
+/*.thumbnail #myCarousel{
+    max-height: 350px;
+}*/
+
 /*Set media-object margins to zero*/
-.media-object{
+/*.media-object{
     margin:0px;
-}
+}*/
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
