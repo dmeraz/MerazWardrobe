@@ -19,8 +19,8 @@
     @foreach (var item in Model)
     {
         <div class="col-xs-6 col-md-4">
-            <a href="/Bottoms/Details" class="thumbnail"> 
-                <img src="modelItem => item.Photo" alt="modelItem => item.Name">
+            <a href="@Url.Action("Details", "Details")" class="thumbnail">
+                <img src="@Url.Content(@item.Photo)" alt = "@item.Name" />
             </a>
         </div>
     }
