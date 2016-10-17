@@ -20,10 +20,17 @@ body {
 }
 
 /*Style Jumbotron*/
+.jumbotron{
+    /*Make body off-white*/
+    background-color: #f9f4ef;
+}
 .jumbotron h1{
     font-family: 'Homemade Apple', cursive;
 }
 
+.row h2{
+    font-family: 'ABeeZee', sans-serif;
+}
 /*Attempt to make image border*/
 /*img{
     border-color: #276f45;
