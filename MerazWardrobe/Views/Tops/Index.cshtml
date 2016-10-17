@@ -4,60 +4,62 @@
     ViewBag.Title = "Index";
 }
 
+@* Customize header *@
+
 <h2>Tops</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Style)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Color)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Style)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Color)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occasion)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TopID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TopID })
-        </td>
-    </tr>
-}
+@* Add thumbnail preview *@
+@* Add img src and alt text *@
 
-</table>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-xs-6 col-md-4">
+            @*<a href="@Url.Action("Details", "Details")" class="thumbnail">*@
+            @Html.ActionLink("Details", "Details", new { id = item.TopID })
+            <img src="@Url.Content(@item.Photo)" alt="@item.Name" />
+            @*</a>*@
+        </div>
+    }
+</div>
+
+
+@* Delete table elements, save data for reference *@
+
+@* Titles *@
+
+@*@Html.DisplayNameFor(model => model.Name)
+
+    @Html.DisplayNameFor(model => model.Photo)
+
+    @Html.DisplayNameFor(model => model.Style)
+
+    @Html.DisplayNameFor(model => model.Color)
+
+    @Html.DisplayNameFor(model => model.Season)
+
+    @Html.DisplayNameFor(model => model.Occasion) *@
+
+@* Contents *@
+
+
+        @*@Html.DisplayFor(modelItem => item.Name)
+
+        @Html.DisplayFor(modelItem => item.Photo)
+
+        @Html.DisplayFor(modelItem => item.Style)
+
+        @Html.DisplayFor(modelItem => item.Color)
+
+        @Html.DisplayFor(modelItem => item.Season)
+
+        @Html.DisplayFor(modelItem => item.Occasion)
+
+        @Html.ActionLink("Edit", "Edit", new { id = item.TopID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.TopID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.TopID })*@
+

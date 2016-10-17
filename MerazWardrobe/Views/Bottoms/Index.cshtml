@@ -19,9 +19,10 @@
     @foreach (var item in Model)
     {
         <div class="col-xs-6 col-md-4">
-            <a href="@Url.Action("Details", "Details")" class="thumbnail">
+            @*<a href="@Url.Action("Details", "Details")" class="thumbnail">*@
+            @Html.ActionLink("Details", "Details", new { id = item.BottomID })
                 <img src="@Url.Content(@item.Photo)" alt = "@item.Name" />
-            </a>
+            @*</a>*@
         </div>
     }
 </div>
