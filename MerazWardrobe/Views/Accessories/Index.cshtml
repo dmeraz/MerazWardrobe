@@ -28,7 +28,6 @@
             {
             <div class="item">
                 <a href="@Url.Action("Details",  new { id = item.AccessoryID })" class="thumbnail">
-                    @*@Html.ActionLink("Details", "Details", new { id = item.AccessoryID })*@
                     <img src="@Url.Content(@item.Photo)" alt="@item.Name" />
                 </a>
             </div>
@@ -49,33 +48,9 @@
 <!-- END Headline Carosel -->
 
 
-@* Save table data for reference *@
+@* Deleted table minus view specific details *@
 
-@*@Html.DisplayNameFor(model => model.Name)
-
-@Html.DisplayNameFor(model => model.Photo)
-
-@Html.DisplayNameFor(model => model.Style)
-
-@Html.DisplayNameFor(model => model.Color)
-
-@Html.DisplayNameFor(model => model.Season)
-
-@Html.DisplayNameFor(model => model.Occasion)
-
-@Html.DisplayFor(modelItem => item.Name)
-
-@Html.DisplayFor(modelItem => item.Photo)
-
-@Html.DisplayFor(modelItem => item.Style)
-
-@Html.DisplayFor(modelItem => item.Color)
-
-@Html.DisplayFor(modelItem => item.Season)
-
-@Html.DisplayFor(modelItem => item.Occasion)
-
-@Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID })
+@*@Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID })
 @Html.ActionLink("Details", "Details", new { id = item.AccessoryID })
 @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID })*@
 
