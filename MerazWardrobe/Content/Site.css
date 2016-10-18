@@ -31,6 +31,12 @@ body {
 .row h2{
     font-family: 'ABeeZee', sans-serif;
 }
+
+/*Edit width of table data in Details pages*/
+.dl-horizontal dt{
+    width: 100px;
+}
+
 /*Attempt to make image border*/
 /*img{
     border-color: #276f45;
