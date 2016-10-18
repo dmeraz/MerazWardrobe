@@ -42,6 +42,11 @@ body {
     height:300px;
 }
 
+/*Adjust position of drop-down menu*/
+.dropdown-menu{
+    margin-left:365px;
+}
+
 /*Attempt to make image border*/
 /*img{
     border-color: #276f45;
