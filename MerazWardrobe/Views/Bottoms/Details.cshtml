@@ -9,58 +9,74 @@
 <div>
     <h4>Bottom</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+    @* Insert Media Object *@
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+    <div class="media">
+        <div class="pull-left media-middle">
+            <a href="#">
+                <img class="media-object" src="@Url.Content(@Model.Photo)" alt="model.Photo" style="width:100px;height:100px;" />
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">@Html.DisplayFor(model => model.Name)</h4>
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Style)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Style)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Style)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Color)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Style)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Color)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Season)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Season)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Occasion)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Occasion)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
-
-    </dl>
+            </dl>
+        </div>
+    </div>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+@* Save as reference *@
+
+@* <dt>
+        @Html.DisplayNameFor(model => model.Name)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Photo)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Photo)
+    </dd>
+*@
