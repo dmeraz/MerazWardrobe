@@ -15,36 +15,44 @@ body {
 }
 
 /*Changed navbar color*/
-.navbar{
+.navbar {
     background-color: #0f2c1b;
 }
 
-/*Style Jumbotron*/
-.jumbotron{
-    /*Make body off-white*/
-    background-color: #f9f4ef;
-}
-.jumbotron h1{
-    font-family: 'Homemade Apple', cursive;
+/*Adjust position of navbar button*/
+button {
+    margin-top: 8px;
 }
 
-.row h2{
+/*Adjust position of navbar drop-down menu*/
+.dropdown-menu {
+    margin-left: 365px;
+}
+
+/*Style Jumbotron*/
+.jumbotron {
+    /*Make background off-white*/
+    background-color: #f1f1d9;
+    /*Image works, but maybe replace with something more subtle*/
+    /*background-image: url('warm-texture.jpg');*/
+}
+
+    .jumbotron h1 {
+        font-family: 'Homemade Apple', cursive;
+    }
+
+.row h2 {
     font-family: 'ABeeZee', sans-serif;
 }
 
 /*Edit width of table data in Details pages*/
-.dl-horizontal dt{
+.dl-horizontal dt {
     width: 100px;
 }
 
 /*Set max-height for row thumbnails*/
-.row .thumbnail img{
-    height:300px;
-}
-
-/*Adjust position of drop-down menu*/
-.dropdown-menu{
-    margin-left:365px;
+.row .thumbnail img {
+    height: 300px;
 }
 
 /*Attempt to make image border*/
@@ -53,7 +61,7 @@ body {
 }*/
 
 /*Set max-height for carousel thumbnails*/
-.carousel-inner .thumbnail{
+.carousel-inner .thumbnail {
     height: 350px;
 }
 
