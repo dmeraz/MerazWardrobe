@@ -15,20 +15,25 @@
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
+        @foreach (var item in Model)
+        {
+        <li data-target="#myCarousel" data-slide-to="i", i++></li>
+        }
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="~/Content/accessories-active.png" alt="various accessories">
+            <a>
+                <img src="~/Content/accessories-active.png" style="height:350px;" alt="various accessories">
+            </a>
         </div>
 
         @foreach (var item in Model)
             {
             <div class="item" >
                 <a href="@Url.Action("Details",  new { id = item.AccessoryID })" class="thumbnail">
-                    <img src="@Url.Content(@item.Photo)" alt="@item.Name" />
+                    <img src="@Url.Content(@item.Photo)" style="max-height:350px;" alt="@item.Name" />
                 </a>
             </div>
         }
