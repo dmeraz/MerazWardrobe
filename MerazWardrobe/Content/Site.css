@@ -37,21 +37,20 @@ body {
     width: 100px;
 }
 
+/*Set max-height for row thumbnails*/
+.row .thumbnail img{
+    height:300px;
+}
+
 /*Attempt to make image border*/
 /*img{
     border-color: #276f45;
 }*/
 
-/*Set max-height for rows and carousel*/
-/*Use inside Index views: style="width:350px;height:350px;"*/
-.carousel-inner {
+/*Set max-height for carousel thumbnails*/
+.carousel-inner .thumbnail{
     height: 350px;
 }
-
-/*Set media-object margins to zero*/
-/*.media-object{
-    margin:0px;
-}*/
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
