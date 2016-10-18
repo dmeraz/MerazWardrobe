@@ -13,11 +13,11 @@
     @* Insert Media Object *@
 
     <div class="media">
-        @*<div class="media-left media-middle">*@
-            <a class="pull-left media-middle" href="#">
-                <img class="media-object" src="@Url.Content(@Model.Photo)" alt="model.Photo" style="width:100px;height:100px;" >
+        <div class="pull-left media-middle">
+            <a href="#">
+                <img class="media-object" src="@Url.Content(@Model.Photo)" alt="model.Photo" style="width:100px;height:100px;" />
             </a>
-        @*</div>*@
+        </div>
         <div class="media-body">
             <h4 class="media-heading">@Html.DisplayFor(model => model.Name)</h4>
             
